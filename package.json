@@ -1,0 +1,52 @@
+{
+  "name": "tinytales-ai-brain",
+  "version": "1.0.0",
+  "description": "AI automation system for TinyTales YouTube kids channel - autonomous content creation and management",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "agents:start": "node src/agents/index.js",
+    "content:generate": "node src/scripts/generate-content.js",
+    "social:monitor": "node src/scripts/monitor-social.js"
+  },
+  "keywords": [
+    "ai",
+    "automation",
+    "youtube",
+    "kids",
+    "content-creation",
+    "social-media"
+  ],
+  "author": "TinyTales Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.3",
+    "openai": "^4.67.1",
+    "googleapis": "^144.0.0",
+    "node-cron": "^3.0.3",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "winston": "^3.15.0",
+    "ffmpeg-static": "^5.2.0",
+    "sharp": "^0.33.5",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^9.11.0",
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "allowScripts": {
+    "ffmpeg-static@5.3.0": true,
+    "sharp@0.33.5": true
+  }
+}
